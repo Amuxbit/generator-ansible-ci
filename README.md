@@ -49,7 +49,7 @@ To test, clone the repo, change to the repo, run:
 npm test
 ```
 
-To run a manual integration test run:
+To run a manual integration test, run:
 
 ```bash
 cd test-integration
