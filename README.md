@@ -1,4 +1,4 @@
-# generator-ansible-ci [![Build Status](https://secure.travis-ci.org/JasonGiedymin/generator-ansible-template.png?branch=master)](https://travis-ci.org/JasonGiedymin/generator-ansible-ci)
+# generator-ansible-ci [![Build Status](https://secure.travis-ci.org/Amuxbit/generator-ansible-template.png?branch=master)](https://travis-ci.org/JasonGiedymin/generator-ansible-ci)
 
 > [Yeoman](http://yeoman.io) generator
 
