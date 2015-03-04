@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-ansible-template' ]; then cd .. && eval "mv $currentfolder generator-ansible-template" && cd generator-ansible-template; fi

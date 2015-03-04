@@ -1,0 +1,16 @@
+{
+  "name": "test-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "generator-ansible-ci": "^0.0.0",
+    "yo": "^1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules/yo/cli.js ansible-ci"
+  },
+  "author": "",
+  "license": "ISC"
+}
