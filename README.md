@@ -2,6 +2,7 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+```
      _-----_
     |       |    .--------------------------.
     |--(o)--|    |  Welcome to the Ansible  |
@@ -11,6 +12,7 @@
      |  ~  |     
    __'.___.'__   
  ´   `  |° ´ Y ` 
+```
 
 
 ## Authors
@@ -45,6 +47,13 @@ To test, clone the repo, change to the repo, run:
 
 ```bash
 npm test
+```
+
+To run a manual integration test run:
+
+```bash
+cd test-integration
+bash test.sh # and follow the prompts
 ```
 
 ## License
