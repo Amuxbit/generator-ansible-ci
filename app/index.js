@@ -23,13 +23,13 @@ module.exports = yeoman.generators.Base.extend({
     {
       type: 'input',
       name: 'playbookOwner',
-      message: 'Who is the owner of the Dockerfile? (i.e. Owner/Dockerfile-name)',
+      message: 'Who is the owner of the Dockerfile? (i.e. owner/Dockerfile-name)',
       default: 'ExampleOwner'
     }
     ];
 
     this.prompt(prompts, function (props) {
-      this.options.playbookOwner = props.playbookOwner;
+      this.options.playbookOwner = props.playbookOwner.toLowerCase();
       done();
     }.bind(this));
   },
@@ -65,7 +65,7 @@ module.exports = yeoman.generators.Base.extend({
     ];
 
     this.prompt(prompts, function (props) {
-      this.options.playbookName = props.playbookName;
+      this.options.playbookName = props.playbookName.toLowerCase();
       done();
     }.bind(this));
   },
@@ -90,7 +90,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'input',
       name: 'playbookRepo',
       message: 'What is the repo for this docker playbook?',
-      default: 'https://github/' + this.options.playbookOwner + '/' + this.options.playbookName
+      default: 'https://github.com/' + this.options.playbookOwner + '/' + this.options.playbookName
     },
     {
       type: 'input',
@@ -113,7 +113,7 @@ module.exports = yeoman.generators.Base.extend({
     ];
 
     this.prompt(prompts, function (props) {
-      this.options.playbookVersionTag = props.playbookVersionTag;
+      this.options.playbookVersionTag = props.playbookVersionTag.toLowerCase();
       this.options.playbookVersion = props.playbookVersion;
       this.options.playbookRepo = props.playbookRepo;
       this.options.playbookDesc = props.playbookDesc;
