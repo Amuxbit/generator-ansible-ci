@@ -19,5 +19,8 @@ script:
   # Check the role/playbook's syntax.
   - "ansible-playbook -i ci/inventory ci/$SITE --syntax-check"
 
-  # Example test script to run, output a version or fail
+  # Run the ansible ci playbook
+  - "ansible-playbook -i ci/inventory ci/playbook.yml --connection=local --sudo -vvvv"
+
+  # Additional external test script to run, output a version or fail
   # - "echo 'this script says hi'"
